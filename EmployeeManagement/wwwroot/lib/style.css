@@ -1,0 +1,32 @@
+﻿body {
+    font-size: 30px;
+    color: #FFF;
+}
+
+.textCenter {
+    text-align: center;
+    background: #38B54A;
+    height: 45px;
+    line-height: 45px;
+}
+
+#headerRightDiv {
+    background: #38B54A;
+    height: 75px;
+    line-height: 75px;
+    text-align: center;
+}
+
+#bodyMainContent {
+    background: #ED1F24;
+    height: 400px;
+    line-height: 400px;
+    text-align: center;
+}
+
+#sidebar {
+    background: #3D57A7;
+    height: 400px;
+    line-height: 400px;
+    text-align: center;
+}

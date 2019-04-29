@@ -1,0 +1,44 @@
+﻿@model EmployeeManagement.Models.Employee
+@{
+    Layout = "MasterLayout";
+    var title = "Create Employee";
+    ViewData["Title"] = title;
+}
+<style>
+    .input-validation-error {
+        border-color: red;
+    }
+</style>
+<h2>@title</h2>
+<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+<form class="m-1 p-1" method="post">
+    <div class="form-group">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Skills"></label>
+        <input asp-for="Skills" type="text" class="form-control" />
+        <span asp-validation-for="Skills" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Gender"></label>
+        <input asp-for="Gender" type="text" class="form-control" />
+        <span asp-validation-for="Gender" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Age"></label>
+        <input asp-for="Age" type="text" class="form-control" />
+        <span asp-validation-for="Age" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Salary"></label>
+        <input asp-for="Salary" type="text" class="form-control" />
+        <span asp-validation-for="Salary" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+<script src="/lib/jquery.min.js"></script>
+<script src="/lib/jquery.validate.min.js"></script>
+<script src="/lib/jquery.validate.unobtrusive.min.js"></script>
